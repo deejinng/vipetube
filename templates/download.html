@@ -1,0 +1,30 @@
+<div class="card card-body mb-3">
+    <div class="row">
+        <div class="col-md-6">
+            <img class="img-fluid mb-2" src="{{ url.thumbnail_url }}">
+      </div>
+        <form class="col-md-6" action="/download" method="POST">
+            <p class="lead bold-text">{{ url.title }}</p>
+            <p>{{ url.author }}</p>
+            <p>{{ url.desc }} </p>
+            <p>{{ url.length }}</p>
+  
+            <select name="itag" id="itag">
+                {% for i in url.streams.filter(progressive=True) %}
+                <option value="{{ i.itag }}">{{ i.resolution }} - {{ i.mime_type }}</option>
+                {% endfor %}
+                
+                <!-- Audio -->
+                {% for i in url.streams.filter(only_audio=True) %}
+                <option value="{{ i.itag }}">{{ i.mime_type }}</option>
+                {% endfor %}
+                
+            </select>
+            <button class="" type="submit">DOWNLOAD</button>
+        </form>
+    </div>
+</div>
+<script>
+
+</script>
+ 

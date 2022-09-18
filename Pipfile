@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+bidict = "==0.21.3"
+click = "==8.0.3"
+flask = "==2.0.2"
+flask-socketio = "==5.1.1"
+flask-sqlalchemy = "==2.5.1"
+gunicorn = "==20.1.0"
+itsdangerous = "==2.0.1"
+jinja2 = "==3.0.2"
+markupsafe = "==2.0.1"
+python-engineio = "==4.2.1"
+pytube = "==11.0.1"
+werkzeug = "==2.0.2"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"

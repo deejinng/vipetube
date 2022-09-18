@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+
+@font-face {
+  font-family: "-Regular";
+  src: url(../fonts/);
+}
+
+@font-face {
+  font-family: "-Medium";
+  src: url(../fonts/);
+}
+
+@font-face {
+  font-family: "-Bold";
+  src: url(../fonts/);
+  font-weight: 700;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter";
+}
+
+body {
+  background: #f9faff;
+  color: #202128;
+  font-size: 18px;
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: #000518 !important;
+  font-weight: 900 !important;
+}
+
+.bold-text {
+  color: #161926;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.navbar {
+  background: #2434e1;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 2;
+}
+
+#flex {
+  display: flex;
+}
+
+/* Sect A */
+#intro {
+  margin-top: 60px;
+  padding: 10px;
+}
+
+/* Form */
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 2px 19px rgba(0, 0, 0, 0.12);
+}
+
+.form * {
+  padding: 14px;
+  outline: none;
+  border: none;
+}
+
+.form input {
+  width: 75%;
+  background: #ffffff;
+}
+
+.form button {
+  width: 25%;
+  background: #2434e1;
+  color: #ffffff;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.loading {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loading .spinner {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 20px solid #eaecfc;
+  border-top: 20px solid #2434e1;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
