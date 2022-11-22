@@ -1,4 +1,3 @@
-#A silly random project [Afolabi David] - ©2021
 from pytube import YouTube
 from flask import Flask, session, send_file, render_template, redirect, request
 from io import BytesIO
@@ -39,3 +38,6 @@ if __name__ == '__main__':
     app.run(debug=True)
     # Happy Coding :-)
     
+
+# A silly random project 
+# [Afolabi David] - ©2021

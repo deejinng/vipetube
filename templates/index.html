@@ -1,55 +1,88 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="" content="" />
-    <meta name="theme-color" content="#2434e1">
-    
-    <title>VipeTube</title>
-    
-    <link rel="stylesheet" href="../static/libs/bootstrap.min.css" type="text/css" media="all"/>
-    <link rel="stylesheet" href="../static/src/style.css" type="text/css" media="all" />
-</head>
+    <meta name="theme-color" content="#2434e1" />
 
-<body>
+    <title>VipeTube</title>
+
+    <link
+      rel="stylesheet"
+      href="../static/libs/bootstrap.min.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="../static/src/style.css"
+      type="text/css"
+      media="all"
+    />
+  </head>
+
+  <body>
     <nav class="navbar mb-3">
-        <div class="container" id="flex">
-            <span class="bold-text">VipeTube.</span>
-            <span>OPEN</span>
-        </div>
+      <div class="container" id="flex">
+        <span class="bold-text">VipeTube.</span>
+      </div>
     </nav>
-    
+
     <div class="container" id="intro">
-        <div class="">
-            <h1 class="disaply-2" style="text-align: center;">Download Unlimited YouTube Videos</h1>
-            <p>
-                <span class="bold-text">Goodnews!</span>, VipeTube is here to help you do that without any restrictions and it's free of charge!<br />
-            </p>
-        </div> 
-	    <br />
-        <form class="form" id="url-form" action="/" method="POST" accept-charset="utf-8">
-            <input class="url" type="url" name="url" id="url" value="" placeholder="Enter a valid URL..." />
-            <button class="submit" type="submit">Proceed</button>
-        </form>
+      <div class="">
+        <h1 class="disaply-2" style="text-align: center">
+          Download Unlimited YouTube Videos
+        </h1>
+        <p>
+          <span class="bold-text">Goodnews!</span>, VipeTube is here to help you
+          do that without any restrictions and it's free of charge!<br />
+        </p>
+      </div>
+      <br />
+      <form
+        class="form"
+        id="url-form"
+        action="/"
+        method="POST"
+        accept-charset="utf-8"
+      >
+        <input
+          class="url"
+          type="url"
+          name="url"
+          id="url"
+          value=""
+          placeholder="Enter a valid URL..."
+        />
+        <button class="submit" type="submit">Proceed</button>
+      </form>
     </div>
     <br />
-    
+
     <!-- Download Details -->
     <div class="container" id="download-form">
-    <!-- Download Animation -->
-    <p class="loading">
+      <!-- Download Animation -->
+      <p class="loading">
         <span class="spinner"></span>
         <span class="bold-text">Processing your link...</span>
-    </p>
-    
+      </p>
     </div>
-    
-    
-    <script src="../static/libs/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="../static/libs/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="../static/src/main.js" type="text/javascript" charset="utf-8"></script>
-</body>
 
+    <script
+      src="../static/libs/jquery.min.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <script
+      src="../static/libs/bootstrap.min.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <script
+      src="../static/src/main.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+  </body>
 </html>

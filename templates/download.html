@@ -7,7 +7,6 @@
             <p class="lead bold-text">{{ url.title }}</p>
             <p>{{ url.author }}</p>
             <p>{{ url.desc }} </p>
-            <p>{{ url.length }}</p>
   
             <select name="itag" id="itag">
                 {% for i in url.streams.filter(progressive=True) %}
