@@ -10,13 +10,13 @@
 
     <link
       rel="stylesheet"
-      href="../static/libs/bootstrap.min.css"
+      href="{{url_for('static', filename='libs/bootstrap.min.css')}}"
       type="text/css"
       media="all"
     />
     <link
       rel="stylesheet"
-      href="../static/src/style.css"
+      href="{{url_for('static', filename='src/style.css')}}"
       type="text/css"
       media="all"
     />
@@ -70,17 +70,17 @@
     </div>
 
     <script
-      src="../static/libs/jquery.min.js"
+      src="{{url_for('static', filename='libs/jquery.min.js')}}"
       type="text/javascript"
       charset="utf-8"
     ></script>
     <script
-      src="../static/libs/bootstrap.min.js"
+      src="{{url_for('static', filename='libs/bootstrap.min.js')}}"
       type="text/javascript"
       charset="utf-8"
     ></script>
     <script
-      src="../static/src/main.js"
+      src="{{url_for('static', filename='src/main.js')}}"
       type="text/javascript"
       charset="utf-8"
     ></script>
